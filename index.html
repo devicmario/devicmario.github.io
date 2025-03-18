@@ -1,0 +1,456 @@
+Voy a ayudarte a crear un portafolio moderno y elegante usando Bootstrap, ideal para un desarrollador junior con tus conocimientos.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador Jr</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Devic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section d-flex align-items-center" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-4 fw-bold mb-3 fade-in">¡Hola! Soy <span class="text-warning">Luis Ibarra</span></h1>
+                    <h2 class="mb-4 fade-in">Desarrollador Jr Full Stack</h2>
+                    <p class="lead mb-4 fade-in">Especializado en crear soluciones digitales modernas con Java, Python, JavaScript y más.</p>
+                    <div class="d-flex gap-3 fade-in">
+                        <a href="#proyectos" class="btn btn-light btn-lg">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="./src/file.webp" alt="foto de perfil" class="hero-img img-fluid fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-header">Sobre Mí</h2>
+                    <p class="lead">Desarrollador junior apasionado por crear soluciones tecnológicas eficientes y elegantes.</p>
+                    <p>Soy un desarrollador con experiencia en múltiples lenguajes de programación y tecnologías. Me especializo en desarrollo web y aplicaciones, con un enfoque en crear experiencias de usuario intuitivas y atractivas.</p>
+                    <p>Mi objetivo es seguir creciendo profesionalmente, aprendiendo nuevas tecnologías y mejorando mis habilidades para ofrecer soluciones cada vez más complejas y eficientes.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <!--
+                        <a href="#" class="btn btn-primary">Descargar CV</a> -->
+                        <a href="#habilidades" class="btn btn-primary">Mis Habilidades</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Información Personal</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0 px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold"><i class="bi bi-person me-2"></i>Nombre Completo</div>
+                                        Luis Mario Emmanuel Ibarra Chávez
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0 px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold"><i class="bi bi-envelope me-2"></i>Email</div>
+                                        devicmario001@gmail.com
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0 px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold"><i class="bi bi-geo-alt me-2"></i>Ubicación</div>
+                                        Ciudad de México, México
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0 px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold"><i class="bi bi-translate me-2"></i>Idiomas</div>
+                                        Español (Nativo), Inglés (B2), Francés (B1)
+                                    </div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start border-0 px-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold"><i class="bi bi-briefcase me-2"></i>Experiencia</div>
+                                        1 año en desarrollo
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="py-5 my-5 bg-light">
+        <div class="container">
+            <h2 class="section-header text-center">Mis Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-filetype-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <p>Desarrollo de aplicaciones de escritorio y web con Java, Spring Framework.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-filetype-py"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <p>Desarrollo de scripts, análisis de datos y aplicaciones web con frameworks como Django y Flask.</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <p>Desarrollo frontend con JavaScript moderno, manipulación del DOM.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h4>Kotlin</h4>
+                            <p>Desarrollo de aplicaciones Android modernas y mantenibles con Kotlin.</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!--
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-filetype-php"></i>
+                            </div>
+                            <h4>PHP</h4>
+                            <p>Desarrollo backend con PHP, Laravel y otras tecnologías web.</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-filetype-html"></i>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                            <p>Creación de interfaces modernas y responsivas con HTML5, CSS3 y frameworks como Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-database"></i>
+                            </div>
+                            <h4>Bases de Datos</h4>
+                            <p>Diseño y gestión de bases de datos SQL (MySQL).</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-md-6 col-lg-3">
+                    <div class="card skill-card text-center p-4">
+                        <div class="card-body">
+                            <div class="skill-icon text-primary">
+                                <i class="bi bi-braces"></i>
+                            </div>
+                            <h4>C++</h4>
+                            <p>Desarrollo de aplicaciones de alto rendimiento y sistemas embebidos con C++.</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="py-5 my-5">
+        <div class="container">
+            <h2 class="section-header text-center">Mis Proyectos</h2>
+            <div class="row g-4">
+                <!--
+                <div class="col-md-6 col-lg-4">                    
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Gestión de Inventario</h5>
+                            <p class="card-text">Aplicación web para gestionar inventarios de pequeñas empresas desarrollada con Java Spring Boot y MySQL.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Java</span>
+                                <span class="badge bg-secondary">Spring</span>
+                                <span class="badge bg-info">MySQL</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aplicación de Tareas</h5>
+                            <p class="card-text">Aplicación móvil para gestión de tareas desarrollada con Kotlin para Android con sincronización en la nube.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Kotlin</span>
+                                <span class="badge bg-secondary">Android</span>
+                                <span class="badge bg-info">Firebase</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dashboard Analítico</h5>
+                            <p class="card-text">Panel de control para visualización de datos desarrollado con Python, Flask y bibliotecas de visualización.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-secondary">Flask</span>
+                                <span class="badge bg-info">Chart.js</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 4">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tienda en Línea</h5>
+                            <p class="card-text">E-commerce desarrollado con PHP y Laravel con integración de pasarelas de pago.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">PHP</span>
+                                <span class="badge bg-secondary">Laravel</span>
+                                <span class="badge bg-info">MySQL</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 5">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Simulador de Física</h5>
+                            <p class="card-text">Aplicación de escritorio que simula fenómenos físicos desarrollada con C++ y OpenGL.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">C++</span>
+                                <span class="badge bg-secondary">OpenGL</span>
+                                <span class="badge bg-info">GLSL</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-dark">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="project-img-container">
+                            <img src="/api/placeholder/400/300" class="project-img" alt="Proyecto 6">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Portafolio Personal</h5>
+                            <p class="card-text">Sitio web personal desarrollado con HTML, CSS, JavaScript y Bootstrap para mostrar proyectos.</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-info">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://devicmario.github.io/" class="btn btn-sm btn-outline-primary">Demo</a>
+                                <!--<a href="#" class="btn btn-sm btn-outline-dark">Código</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 my-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-header">Contacto</h2>
+                    <p class="lead mb-4">¿Tienes algún proyecto en mente? ¡Hablemos!</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill text-primary me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <h5 class="mb-0">Correo Electrónico</h5>
+                            <p class="mb-0">devicmario001@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <h5 class="mb-0">Ubicación</h5>
+                            <p class="mb-0">Ciudad de México, México</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-linkedin text-primary me-3" style="font-size: 1.5rem;"></i>
+                        <div>
+                            <h5 class="mb-0">LinkedIn</h5>
+                            <p class="mb-0">www.linkedin.com/in/devicmario</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Sígueme en mis redes:</h5>
+                        <div class="d-flex mt-3">
+                            <a href="https://github.com/devicmario" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/devicmario" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://x.com/devicmarioe" class="social-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Envíame un mensaje</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Ingresa el asunto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <p class="mb-lg-0">&copy; 2025 Devic. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <a href="#" class="social-icon text-white target="_blank""><i class="bi bi-github"></i></a>
+                    <a href="#" class="social-icon text-white target="_blank""><i class="bi bi-linkedin"></i></a>
+                    <a href="https://x.com/devicmarioe" class="social-icon text-white target="_blank""><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+    
+</body>
+</html>
+
+
+
