@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Fullstack Developer" content="index follow">
     <title>Mi Portafolio | Desarrollador Jr</title>
+    <meta name="keywords" content="JavaScript,Node.js,React.js,Angular,Vue.js,HTML,CSS,Python,Java,PHP,SQL,Developer, Desarrollador, Trabajo en equipo,Comunicación efectiva,Resolución de problemas, Adaptabilidad, Gestión del tiempo">
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="./css/styles.css">
@@ -139,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <!--
+                
                 <div class="col-md-6 col-lg-3">
                     <div class="card skill-card text-center p-4">
                         <div class="card-body">
@@ -151,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                -->
+                
                 <div class="col-md-6 col-lg-3">
                     <div class="card skill-card text-center p-4">
                         <div class="card-body">
@@ -495,7 +498,8 @@
                 <div class="col-lg-6">
                     <div class="contact-form">
                         <h4 class="mb-4">Envíame un mensaje</h4>
-                        <form>
+                        <form action="/index.html" method="post">
+                            <fieldset>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre Completo</label>
                                 <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre"  aria-label="Ingresa tu nombre completo">
@@ -504,6 +508,45 @@
                                 <label for="email" class="form-label">Correo Electrónico</label>
                                 <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" aria-label="Ingresa tu correo electronico">
                             </div>
+                            <div class="mb-3">
+                                <label for="estado" class="form-label">Estado</label>
+                                <input list="estados" id="estado" name="estado" class="form-control" placeholder="Ingresa tu estado" aria-label="Ingresa tu estado">
+                                <datalist id="estados">
+                                    <option value="AGS">Aguascalientes</option>
+                                    <option value="BC">Baja California</option>
+                                    <option value="BCS">Baja California Sur</option>
+                                    <option value="CAMP">Campeche</option>
+                                    <option value="COAH">Coahuila</option>
+                                    <option value="COL">Colima</option>
+                                    <option value="CHIS">Chiapas</option>
+                                    <option value="CHIH">Chihuahua</option>
+                                    <option value="CDMX">Ciudad de México</option>
+                                    <option value="DGO">Durango</option>
+                                    <option value="GTO">Guanajuato</option>
+                                    <option value="GRO">Guerrero</option>
+                                    <option value="HGO">Hidalgo</option>
+                                    <option value="JAL">Jalisco</option>
+                                    <option value="MEX">Estado de México</option>
+                                    <option value="MICH">Michoacán</option>
+                                    <option value="MOR">Morelos</option>
+                                    <option value="NAY">Nayarit</option>
+                                    <option value="NL">Nuevo León</option>
+                                    <option value="OAX">Oaxaca</option>
+                                    <option value="PUE">Puebla</option>
+                                    <option value="QRO">Querétaro</option>
+                                    <option value="QROO">Quintana Roo</option>
+                                    <option value="SLP">San Luis Potosí</option>
+                                    <option value="SIN">Sinaloa</option>
+                                    <option value="SON">Sonora</option>
+                                    <option value="TAB">Tabasco</option>
+                                    <option value="TAMS">Tamaulipas</option>
+                                    <option value="TLAX">Tlaxcala</option>
+                                    <option value="VER">Veracruz</option>
+                                    <option value="YUC">Yucatán</option>
+                                    <option value="ZAC">Zacatecas</option>
+                                </datalist>
+                            </div>
+                        </fieldset>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Asunto</label>
                                 <input type="text" class="form-control" id="subject" placeholder="Ingresa el asunto" aria-label="Ingresa el asunto del mensaje">
